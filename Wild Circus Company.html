@@ -57,11 +57,14 @@
             transition-duration: 1s;
             font-size: 14px;
             }
-        #box_avis: hover
+
+        .show_avis
             {
             font-size: 20px;
             background-color: green
             }
+
+
 
         nav {
            position: relative;
@@ -85,7 +88,7 @@
                     justify-content: space-around;
                     list-style-type:none;
                 }
-          #menu_nav li{
+        #menu_nav li{
                 background: rgba(144,126,92,.3);
                 -moz-border-radius: 10px;
                 -webkit-border-radius: 10px;
@@ -131,18 +134,13 @@
                 opacity: 0;
                  }
 
-        section
-                { position: relative;
-                    border: 0px solid black;
-                    margin-top: 10px;}
-
-
         #conteneur
-        {
+        {   margin-top: 10px;
             display: flex;
             justify-content: space-around;
             align-items: center;
             }
+
         .element
         {   
             width: 31%;
@@ -155,8 +153,7 @@
 
         .element:nth-child(1){
             background: url("https://i.imgur.com/Z5ms6TAl.jpg")
-                         center no-repeat 
-                         ;
+                         center no-repeat;
         }     
 
         .element:nth-child(2){
@@ -169,10 +166,9 @@
         } 
 
 
-        .show-description article {
-            opacity: 1;
+        .show-description article     /*propriété modifiée par JQuery*/ 
+        { opacity: 1;
             }
-
 
         </style>
     </head>
@@ -204,38 +200,35 @@
             </ul>
         </nav>
         
-        <section>
-            <div id="conteneur">
-                <div class="element">
+        <div id="conteneur">
+
+            <section class="element">
                     <article>                
                         <h1>Pirates</h1>
                         <p>The greatest and fantastic performance of Pirate Never realized, in a grandiose setting mixing Musical Comedy, waterfalls, magic, dances, juggling. 
                         <br />Relive with us the fabulous history of pirates. Magicians, dancers and jugglers assisted by the exceptional presence of the stunt pirates of the extreme, never a show of pirates had such a magnitude, such amplitude.
                         </p>
                     </article>
-                </div>
-                <div class="element">
+            </section>
+
+            <section class="element">
                  <article>                
                     <h1>Fleas</h1>
                     <p>Suspended at straps attached to the Carrousel - a stage device hung above the stage - the artists make large envelopes above the audience. 
                     <br />This spectacular four-dimensional demonstration requires an exemplary sense of rhythm, not to mention the skill and physical strength required to move at high speed in a 360-degree rayon.
                     </p>
-                    </article>
+                </article>
+            </section>
 
-                </div>
-                <div class="element">
-                    <article>                
+            <section class="element">
+                <article>                
                     <h1>Virus</h1>
                     <p>In "V", the Wild Circus weaves a timeless aquatic tapestry of art, surrealism and theatrical romance. Inspired by the concept of infinity and the refined elegance of water, "V" pays tribute to the magic of the theater. 
                     <br />Acrobats of international caliber, synchronized swimmers and divers offer an unusual experience.
                     </p>
-                    </article>
-                </div>
-            </div>
-
-        </section>
-
-
+                </article>
+            </section>
+        </div>
 
         
         <footer>
@@ -247,26 +240,25 @@
             <a href="#">Contact Us!</a></p>
         </footer>
         
-         <script>
+<!--          <script>
              $('.element').on('click', function()
-              {
-                  $(this).toggleClass('show-description');
+              {$(this).toggleClass('show-description');
                });
-        </script>
+        </script> -->
         <script>
              $('.element').on('mouseenter', function()
-              {
-                  $(this).toggleClass('show-description');
+              {$(this).toggleClass('show-description');
                });
         </script>
 
-        <!--   :-( Celui là que j'ai trouvé sur Internet, je n'arrive pas à le faire fonctionner  
+<!--            :-( Celui là que j'ai trouvé sur Internet, je n'arrive pas à le faire fonctionner  
             src="https://github.com/AurelioDeRosa/Audero-Flashing-Text/tree/master/src/jquery.auderoFlashingText.js"
-        -->
+        
              <script>$('#box_avis').auderoFlashingText();</script>
-     <!--    <script src="path/to/jquery.js"></script> -->
+           <script src="path/to/jquery.js"></script> 
             <script src="/assets/jquery.js"></script>
-            <script src="https://github.com/AurelioDeRosa/Audero-Flashing-Text/tree/master/src/jquery.auderoFlashingText.js"></script>
+            <script src="https://github.com/AurelioDeRosa/Audero-Flashing-Text/tree/master/src/jquery.auderoFlashingText.js"></script> -->
+
 
     </body>
 </html>
