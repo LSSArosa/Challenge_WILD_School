@@ -28,5 +28,11 @@ L’outil jsfiddle : https://jsfiddle.net/
 Liste de composants jquery : http://jquerycards.com/
 
 
+-----------------------------------------------------------------------------------------------
+les résultats sont dans :
+https://github.com/LSSArosa/Challenge_WILD_School/edit/master
+
+https://jsfiddle.net/LSSA/hhybw8nv/29/
 
 
+http://www.robozzle.com/user.aspx?name=lssa
